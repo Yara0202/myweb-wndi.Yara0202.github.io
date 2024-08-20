@@ -64,6 +64,39 @@ header ul li a:hover {
   color: white;
 }
 
+.gambar {
+  height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gambar:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(25, 190, 255, 0.048);
+}
+
+section {
+  padding: 50px 0;
+}
+
+.gambar h2 {
+  color: white;
+  z-index: 1;
+  padding: 20px 25px;
+  border: 3px solid white;
+}
+
 .menu-icon {
   display: none;
   font-size: 30px;
@@ -72,31 +105,6 @@ header ul li a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  header ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      background-color: #55c8f5;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      padding: 10px 0;
-  }
-
-  header ul li {
-      margin: 10px 0;
-  }
-
-  header ul.showing {
-      display: flex;
-  }
-
-  .menu-icon {
-      display: block;
-  }
-}
 
 .gambar {
     height: 100vh;
